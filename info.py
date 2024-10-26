@@ -28,7 +28,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files)
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
 
@@ -57,7 +57,7 @@ LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 
 # bot settings
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
